@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Price Prediction</title>
+</head>
+
+<body style="background-color: rgb(226, 198, 209);">
+
+    <h1> Car Price Prediction </h1>
+    <form method="POST" action="/predict_car_price">
+
+        <label>Year:</label>
+        <input type = "text" name = "Year">
+        </select>
+        
+        <br>
+        <br>
+        
+        <label>Present_Price:</label>
+        <input type = "text" name = "Present_Price">
+        </select>
+        
+        <br>
+        <br>
+
+        <label>Kms_Driven:</label>
+        <input type = "text" name = "Kms_Driven">
+        </select>
+        
+        <br>
+        <br>
+        
+        <label>Seller_Type:</label>
+        <select name = "Seller_Type">
+            <option value = "Dealer">Dealer</option>
+            <option value = "Individual">Individual</option>
+        </select>
+         
+        <br>
+        <br>
+
+
+        <label>Transmission:</label>
+        <select name = "Transmission">
+            <option value = "Manual">Manual</option>
+            <option value = "Automatic">Automatic</option>
+        </select>
+
+
+        <br>
+        <br>
+
+
+    
+        <label>Fuel_Type:</label>
+        <select name = "Fuel_Type">
+            <option value = "Diesel">Diesel</option>
+            <option value = "Petrol">Petrol</option>
+            <option value = "CNG">CNG</option>
+        </select>
+
+        <br>
+        <br>
+
+        <label>Owner:</label>
+        <input type = "text" name = "Owner">
+        </select>
+
+        <br>
+        <br>
+
+    
+
+      
+        <input type = "submit" value="SUBMIT">
+
+        <br>
+
+        <p>Your Car Price will be <b> {{ prediction }} /- lakh.</b> Only </p>
+
+
+    </form>
+
+
+</body>
+</html>
